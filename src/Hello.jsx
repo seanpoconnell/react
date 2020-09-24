@@ -2,8 +2,10 @@ import React from 'react' ;
 
 const Hello = () => {
   return (
-    <h1>Goddbye World</h1>
+    <h1>Hello</h1>
   );
 }
 
 export default Hello;
+
+// 30:50
