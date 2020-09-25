@@ -6,10 +6,9 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Hello />
-        <Hello />
-        <Hello />
-        <Hello />
+        <Hello name="Sean" age="23" />
+        <Hello name="Ashley" age="17" />
+        <Hello name="Chris" age="27" />
       </header>
     </div>
   );
