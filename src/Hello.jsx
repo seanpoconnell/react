@@ -8,7 +8,7 @@ class Hello extends Component {
   state = { clicked:false }
 
   handleClick = () => {
-    console.log('I was clicked')
+    this.setState({ clicked: !this.state.clicked})
   }
 
   render() {
