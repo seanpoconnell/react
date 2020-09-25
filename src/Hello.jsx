@@ -1,11 +1,11 @@
 import React from 'react' ;
 
-const Hello = () => {
+//props = { name: 'Gabriel' }
+const Hello = (props) => {
   return (
-    <h1>Hello</h1>
+    <h1>Hello {props.name} ({props.age})</h1>
   );
 }
 
 export default Hello;
 
-// 30:50
