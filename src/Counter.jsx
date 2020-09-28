@@ -3,21 +3,24 @@ import './Counter.scss';
 
 class Counter extends Component {
   state = {
-    count: this.props.initialCount
+    count: 0
   }
 
   subtract = () => {
-    const newCount = this.state.count - this.props.step
+    const step = this.props.step || 1;
+    const newCount = this.state.count - step;
+
 
     if ( newCount <= 0) {
       this.setState({ count: 0 });
     } else {
-      this.setState({ count: this.state.count - this.props.step });
+      this.setState({ count: this.state.count - step });
       }
   }
 
   add = () => {
-    this.setState({ count: this.state.count + this.props.step });
+    const step = this.props.step || 1;
+    this.setState({ count: this.state.count + step });
   }
 
   render() {
