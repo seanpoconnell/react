@@ -7,10 +7,13 @@ class Counter extends Component {
   }
 
   subtract = () => {
-    if (this.state.count === 0) {
-      return;
-    }
-    this.setState({ count: this.state.count - this.props.step });
+    const newCount = this.state.count - this.props.step
+
+    if ( newCount <= 0) {
+      this.setState({ count: 0 });
+    } else {
+      this.setState({ count: this.state.count - this.props.step });
+      }
   }
 
   add = () => {
