@@ -10,11 +10,11 @@ class Counter extends Component {
     if (this.state.count === 0) {
       return;
     }
-    this.setState({ count: this.state.count - 1});
+    this.setState({ count: this.state.count - this.props.step });
   }
 
   add = () => {
-    this.setState({ count: this.state.count + 1});
+    this.setState({ count: this.state.count + this.props.step });
   }
 
   render() {
