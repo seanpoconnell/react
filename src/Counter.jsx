@@ -3,7 +3,7 @@ import './Counter.scss';
 
 class Counter extends Component {
   state = {
-    count: 0
+    count: this.props.initialCount
   }
 
   subtract = () => {
